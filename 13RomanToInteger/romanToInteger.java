@@ -25,15 +25,29 @@ Constraints:
         4- Conversion of this String as it's related integer values in roman numeral
 
 */
-package digits;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class romanToInteger{
 
+    public class digits{     
+        private class values {
+
+                private int I = 1;
+                private int V = 5;
+                private int X = 10;
+                private int L = 50;
+                private int C = 100;
+                private int D = 500;
+                private int M = 1000;
+            }
+        }
     
     public static void main(String[] args) {
-        JOptionPane.showInputDialog(null, "Type a roman number to convert to an integer value:");
+        int strToInt = "";
+        do{
+            int strToInt = Integer.parseInt(JOptionPane.showInputDialog(null, "Type a roman number to convert to an integer value:"));
+            digits algs = new digits();
     
+    } while (strToint != 0);
     }
-}
